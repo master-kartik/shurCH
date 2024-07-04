@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     letter-spacing: -0.5px;
+    background-color: #282828;
   }
   
   .container {
@@ -14,8 +15,7 @@ body {
     margin: 10 auto;
     padding: 20px;
     background-color: #282828;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+ 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
