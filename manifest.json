@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Transcript Search",
+    "version": "1.0",
+    "description": "Searches through the transcript of a YouTube video",
+    "icons": {
+      "16": "assets/icon.png",
+      "48": "assets/icon.png",
+      "128": "assets/icon.png"
+    },
+    "permissions": ["activeTab"],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
