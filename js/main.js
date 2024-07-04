@@ -62,10 +62,10 @@ document.addEventListener("DOMContentLoaded", () => {
           ]);
           console.log(textCombo);
         } else {
-          dataContainerEl.innerHTML = "Word or a phrase not found, try searching something else";
           searchBtnEl.textContent = "Not Found";
           searchBtnEl.textContent = "Search";
           searchBtnEl.disabled = false;
+         
         }
       }
     } else {
@@ -75,11 +75,12 @@ document.addEventListener("DOMContentLoaded", () => {
             .toLowerCase()
             .includes(searchInputEl.value.toLowerCase())
         ) {
+          console.log(transcript.text)
           filteredArr.push([transcript]);
         } else {
           searchBtnEl.textContent = "Search";
-          dataContainerEl.innerHTML = "Word or a phrase not found, try searching something else";
           searchBtnEl.disabled = false;
+          
         }
       });
     }
@@ -122,7 +123,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
       searchBtnEl.innerHTML = "Search";
       searchBtnEl.disabled = false;
+      
+     
     });
+      if(dataContainerEl.innerText === ""){
+        dataContainerEl.innerHTML = "Word or a phrase not found, try searching something else";
+      }
   }
 
   function fetchDataFromBackend() {

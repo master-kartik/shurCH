@@ -11,13 +11,12 @@ app.use(express.json())
 
 
 app.use(cors());
-// Define a route to handle transcript retrieval
-// Define a route to handle transcript retrieval
+
 app.get('/transcript', (req, res) => {
     try {
-        // Extract the video URL from the query parameters
+eters
         console.log("backend started")
-        const videoUrl = req.query.video_url; // Corrected to 'video_url'
+        const videoUrl = req.query.video_url; 
         console.log(videoUrl);
 
         // Fetch the transcript using youtube-transcript-api
@@ -36,8 +35,8 @@ app.get('/transcript', (req, res) => {
 });
 
 
-// Start the server
-const PORT = process.env.PORT || 5000; // Use port 5000 by default
+
+const PORT = process.env.PORT || 5000; 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
